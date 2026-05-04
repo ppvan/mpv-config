@@ -44,7 +44,7 @@ end
 
 -- ===== Playlist link validation =====
 local function is_supported(url)
-    return url:find("youtube.com") or url:find("youtu.be") or url:match("m3u8$") or url:match("m3u$")
+    return url:find("youtube.com") or url:find("youtu.be") or url:match("m3u8") or url:match("m3u$")
 end
 
 -- ===== Main hook =====

@@ -17,7 +17,7 @@ local options = {
     source_lang = "fr",
     load_autosub_binding = "alt+y",
     autoload_autosub_binding = "alt+Y",
-    cache_dir = utils.join_path(os.getenv("HOME"), ".cache/ytsub/"),
+    cache_dir = mp.command_native({"expand-path", "~~home/cache/ytsub/"}),
 }
 require("mp.options").read_options(options)
 
